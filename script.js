@@ -29,3 +29,10 @@ window.addEventListener("mousemove",(e)=>{
     glow.style.top = e.clientY+"px";
 
 });
+function copyContract() {
+    const text = document.getElementById("contractAddress");
+
+    navigator.clipboard.writeText(text.value);
+
+    alert("Contract copied!");
+}
